@@ -1,7 +1,7 @@
 ## Getting started
 
 1. Clone repository:
-`git clone https://github.com/JayeshLab/bootstrap-4-sass-gulp-4-boilerplate.git`
+`git clone https://MikeDias5@bitbucket.org/twistag/twistag-starter-html.git`
 
 2. Change directory:
 `cd twistag-starter_html`
