@@ -1,0 +1,42 @@
+.insights-top-left {
+  padding-left: 120px;
+  padding-top: 100px;
+  h1 {
+    font-family: "Tiempos Headline";
+    font-weight: 500;
+    font-size: 64px;
+    letter-spacing: -1.92px;
+    margin-bottom: 40px;
+  }
+}
+
+.insights-top-right {
+  padding-top: 110px;
+  h1 {
+    margin-right: 60px;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: -0.6px;
+    text-transform: uppercase;
+  }
+  span {
+    text-transform: uppercase;
+    font-size: 20px;
+    letter-spacing: -0.6px;
+  }
+  p {
+    margin-top: 30px;
+    font-size: 40px;
+    letter-spacing: -1.2px;
+    padding-right: 150px;
+  }
+}
+
+.insights-bottom {
+  width: 1695px;
+  height: 715px;
+  background: url("../img/bg-news.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+}

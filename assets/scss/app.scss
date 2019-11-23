@@ -16,4 +16,86 @@
 
 // Sections
 @import "sections/footer";
-@import "sections/header";
+@import "sections/case";
+@import "sections/hero";
+@import "sections/clients";
+@import "sections/insights";
+@import "sections/nav";
+
+// Fonts
+
+@font-face {
+  font-family: "Tiempos Headline";
+  src: url("../fonts/TiemposHeadline-Semibold.woff2") format("woff2"),
+    url("../fonts/TiemposHeadline-Semibold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Tiempos Headline";
+  src: url("../fonts/TiemposHeadline-Medium.woff2") format("woff2"),
+    url("../fonts/TiemposHeadline-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Maison Neue";
+  src: url("../fonts/MaisonNeue-Book.woff2") format("woff2"),
+    url("../fonts/MaisonNeue-Book.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Maison Neue";
+  src: url("../fonts/MaisonNeue-Bold.woff2") format("woff2"),
+    url("../fonts/MaisonNeue-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+
+// SCSS
+
+body {
+  font-family: "Maison Neue";
+  background: $bg-almost-white;
+  color: $very-dark-brown;
+}
+
+.button {
+  background-color: transparent;
+  border: none;
+  text-decoration: none;
+  display: inline-block;
+  font-family: "Maison Neue";
+  font-weight: bold;
+  font-size: 20px;
+  color: $very-dark-brown;
+  letter-spacing: -0.6px;
+}
+
+.btn-outline-brown {
+  border: 1px solid $very-dark-brown;
+  height: 75px;
+  width: 270px;
+  margin-right: 60px;
+}
+.btn-underline-brown {
+  width: 180px;
+  border-bottom: 4px solid $very-dark-brown;
+  text-align: left;
+}
+
+.bg-almost-black {
+  background: $bg-almost-black;
+}
+
+.bg-almost-white {
+  background: $bg-almost-white;
+}
+
+.bg-light-gray {
+  background: $bg-light-gray;
+}

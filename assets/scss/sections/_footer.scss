@@ -1,3 +1,28 @@
 // ================================================
 // 					FOOTER
 // ================================================
+
+.footer {
+  min-height: 400px;
+  padding-left: 120px;
+  padding-top: 150px;
+  color: $white;
+  h1 {
+    font-family: "Tiempos Headline";
+    font-weight: 500;
+    font-size: 60px;
+    letter-spacing: -1.92px;
+    margin-bottom: 40px;
+
+    span {
+      color: $orange;
+    }
+  }
+  .lower-text {
+    margin-top: 60px;
+    img {
+      width: 260px;
+      height: 62px;
+    }
+  }
+}

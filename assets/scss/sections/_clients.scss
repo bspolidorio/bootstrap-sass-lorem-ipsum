@@ -1,0 +1,33 @@
+.clients-left {
+  padding-left: 120px;
+  padding-top: 220px;
+  h1 {
+    font-family: "Tiempos Headline";
+    font-weight: 500;
+    font-size: 64px;
+    letter-spacing: -1.92px;
+    padding-right: 300px;
+    span {
+      text-decoration: underline;
+      text-decoration-color: $orange;
+    }
+  }
+  p {
+    margin-top: 70px;
+    font-size: 28px;
+    line-height: 44px;
+    letter-spacing: -0.84px;
+  }
+}
+
+.clients-right {
+  padding-top: 220px;
+  padding-right: 230px;
+  ul {
+    list-style: none;
+  }
+  li {
+    height: 120px;
+    width: 300px;
+  }
+}
