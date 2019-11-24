@@ -10678,104 +10678,49 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 .hero-left {
-  position: relative;
-  padding-left: 120px;
+  padding-left: 6.26vw;
+  padding-right: 4.58vw;
 }
 
-.hero-left h1 {
-  margin-top: 30vh;
-  font-size: 100px;
+.hero-left h2 {
+  margin-top: 25vh;
+  font-size: 6.25rem;
   font-family: "Tiempos Headline";
   font-weight: 600;
 }
 
-.hero-left h1 span {
+.hero-left h2 span {
   text-decoration: underline;
   -webkit-text-decoration-color: #ffc167;
           text-decoration-color: #ffc167;
 }
 
-@media (max-width: 991.98px) {
-  .hero-left h1 {
-    font-size: 40px;
-  }
+.hero-left p {
+  font-size: 2.25rem;
+  margin-top: 10.7vh;
 }
 
-.hero-left h2 {
-  font-size: 36px;
-  margin-bottom: 90px;
-  margin-top: 100px;
-}
-
-.hero-left .ellipse-outer {
-  border-width: 5px;
-  border-color: #1f222b;
-  border-style: solid;
-  border-radius: 50%;
-  position: absolute;
-  left: -1120px;
-  top: -50px;
-  width: 1172px;
-  height: 1172px;
-  z-index: 475;
-}
-
-.hero-left .ellipse-inner {
-  border-width: 1px;
-  border-color: #1f222b;
-  border-style: solid;
-  border-radius: 50%;
-  position: absolute;
-  left: -1100px;
-  top: -30px;
-  width: 1133px;
-  height: 1133px;
-  z-index: 474;
+.hero-left a {
+  margin-top: 8.62vh;
+  margin-right: 3.1vw;
+  margin-bottom: 8.62vh;
 }
 
 .hero-right {
-  position: relative;
-  overflow-x: hidden;
-  padding-left: 120px;
+  padding-left: 6.26vw;
   background: url("../img/bg-hero.png");
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-.hero-right h2 {
-  z-index: 300;
+.hero-right p {
+  font-size: 2.25rem;
   color: #e6e6e6;
-  margin-bottom: 65px;
+  margin-bottom: 7vh;
 }
 
-.hero-right h2 span {
+.hero-right p span {
   color: #ffc167;
-}
-
-.hero-right .ellipse-outer {
-  border-width: 5px;
-  border-color: #1f222b;
-  border-style: solid;
-  border-radius: 50%;
-  position: absolute;
-  left: 190px;
-  top: -460px;
-  width: 1172px;
-  height: 1172px;
-  z-index: 473;
-}
-
-.hero-right .ellipse-inner {
-  border-width: 1px;
-  border-color: #1f222b;
-  border-style: solid;
-  border-radius: 50%;
-  position: absolute;
-  left: 210px;
-  top: -440px;
-  width: 1133px;
-  height: 1133px;
-  z-index: 472;
 }
 
 .clients-left {
@@ -10804,12 +10749,10 @@ a.text-dark:hover, a.text-dark:focus {
   letter-spacing: -0.84px;
 }
 
-.clients-right {
-  padding-top: 220px;
-  padding-right: 230px;
-}
-
 .clients-right ul {
+  padding: 0px;
+  margin-top: 20vh;
+  margin-right: 8vw;
   list-style: none;
 }
 
@@ -10906,35 +10849,46 @@ nav img {
   font-style: normal;
 }
 
+html,
 body {
   font-family: "Maison Neue";
   background: #f4f4f4;
   color: #020000;
+  font-size: 16px;
+}
+
+@media (max-width: 991.98px) {
+  html,
+  body {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  html,
+  body {
+    font-size: 10px;
+  }
 }
 
 .button {
-  background-color: transparent;
-  border: none;
-  text-decoration: none;
   display: inline-block;
   font-family: "Maison Neue";
   font-weight: bold;
-  font-size: 20px;
+  font-size: 1.25rem;
   color: #020000;
   letter-spacing: -0.6px;
 }
 
 .btn-outline-brown {
   border: 1px solid #020000;
-  height: 75px;
-  width: 270px;
-  margin-right: 60px;
+  text-align: center;
+  padding: 1.3vw 3.6vw;
 }
 
 .btn-underline-brown {
-  width: 180px;
-  border-bottom: 4px solid #020000;
-  text-align: left;
+  padding-right: 2.6vw;
+  border-bottom: 0.2vw solid #020000;
 }
 
 .bg-almost-black {

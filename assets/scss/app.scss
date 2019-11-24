@@ -58,37 +58,37 @@
 
 // SCSS
 
+html,
 body {
   font-family: "Maison Neue";
   background: $bg-almost-white;
   color: $very-dark-brown;
+  font-size: 16px;
+  @media (max-width: 991.98px) {
+    font-size: 14px;
+  }
+  @media (max-width: 575.98px) {
+    font-size: 10px;
+  }
 }
-.teste {
-}
-.teste-2 {
-}
+
 .button {
-  background-color: transparent;
-  border: none;
-  text-decoration: none;
   display: inline-block;
   font-family: "Maison Neue";
   font-weight: bold;
-  font-size: 20px;
+  font-size: 1.25rem;
   color: $very-dark-brown;
   letter-spacing: -0.6px;
 }
 
 .btn-outline-brown {
   border: 1px solid $very-dark-brown;
-  height: 75px;
-  width: 270px;
-  margin-right: 60px;
+  text-align: center;
+  padding: 1.3vw 3.6vw;
 }
 .btn-underline-brown {
-  width: 180px;
-  border-bottom: 4px solid $very-dark-brown;
-  text-align: left;
+  padding-right: 2.6vw;
+  border-bottom: 0.2vw solid $very-dark-brown;
 }
 
 .bg-almost-black {
