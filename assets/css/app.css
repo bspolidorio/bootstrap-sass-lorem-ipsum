@@ -10720,41 +10720,105 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 .clients-left {
-  padding-left: 120px;
-  padding-top: 220px;
+  padding-left: 6.25vw;
+  padding-top: 20.37vh;
 }
 
-.clients-left h1 {
+@media (max-width: 991.98px) {
+  .clients-left {
+    padding-top: 7vh;
+    padding-right: 6.25vw;
+  }
+}
+
+.clients-left h2 {
   font-family: "Tiempos Headline";
   font-weight: 500;
-  font-size: 64px;
+  font-size: 4rem;
   letter-spacing: -1.92px;
-  padding-right: 300px;
+  max-width: 550px;
 }
 
-.clients-left h1 span {
+.clients-left h2 span {
   text-decoration: underline;
   -webkit-text-decoration-color: #ffc167;
           text-decoration-color: #ffc167;
 }
 
+@media (max-width: 575.98px) {
+  .clients-left h2 {
+    font-size: 3.75rem;
+  }
+}
+
 .clients-left p {
   margin-top: 70px;
-  font-size: 28px;
-  line-height: 44px;
+  font-size: 1.75rem;
+  line-height: 2.75rem;
   letter-spacing: -0.84px;
+}
+
+@media (max-width: 991.98px) {
+  .clients-left p {
+    margin-top: 5vh;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .clients-left p {
+    font-size: 1.75rem;
+    line-height: 2.75rem;
+  }
+}
+
+.clients-right {
+  padding: 0;
+  padding-top: 20.37vh;
+}
+
+@media (max-width: 991.98px) {
+  .clients-right {
+    padding-top: 7vh;
+  }
 }
 
 .clients-right ul {
   padding: 0px;
-  margin-top: 20vh;
-  margin-right: 8vw;
+  max-width: 700px;
   list-style: none;
 }
 
+@media (max-width: 991.98px) {
+  .clients-right ul {
+    padding: 0 10px;
+  }
+}
+
 .clients-right li {
-  height: 120px;
-  width: 300px;
+  width: 50%;
+  padding: 0 50px 120px 0;
+}
+
+.clients-right li:last-child {
+  padding-top: 50px;
+}
+
+@media (max-width: 575.98px) {
+  .clients-right li {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 0 10px 50px;
+  }
+}
+
+.clients-right img {
+  max-width: 100%;
+  max-height: 100%;
+  display: block;
 }
 
 .insights-top-left {
@@ -10874,6 +10938,7 @@ body {
   font-size: 1.25rem;
   color: #020000;
   letter-spacing: -0.6px;
+  text-transform: uppercase;
 }
 
 .btn-outline-brown {
