@@ -10582,10 +10582,10 @@ a.text-dark:hover, a.text-dark:focus {
   color: #ffffff;
 }
 
-@media (max-width: 575.98px) {
+@media (max-width: 991.98px) {
   .case-left {
-    padding-top: 15vh;
-    padding-bottom: 20vh;
+    padding-top: 7vh;
+    padding-bottom: 10vh;
   }
 }
 
@@ -10605,6 +10605,12 @@ a.text-dark:hover, a.text-dark:focus {
 
 .case-left p span {
   color: #ffc167;
+}
+
+@media (max-width: 991.98px) {
+  .case-left p {
+    margin-top: 1vh;
+  }
 }
 
 .case-right {

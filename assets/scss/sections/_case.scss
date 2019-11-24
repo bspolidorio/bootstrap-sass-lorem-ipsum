@@ -2,9 +2,9 @@
   padding-left: 6.8vw;
   padding-top: 44vh;
   color: $white;
-  @media (max-width: 575.98px) {
-    padding-top: 15vh;
-    padding-bottom: 20vh;
+  @media (max-width: 991.98px) {
+    padding-top: 7vh;
+    padding-bottom: 10vh;
   }
   h2 {
     font-weight: bold;
@@ -19,6 +19,9 @@
     letter-spacing: -1.32px;
     span {
       color: $orange;
+    }
+    @media (max-width: 991.98px) {
+      margin-top: 1vh;
     }
   }
 }
