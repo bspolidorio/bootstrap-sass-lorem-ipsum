@@ -1,46 +1,21 @@
-.case {
-  position: relative;
-  overflow-x: hidden;
-  .ellipse-outer {
-    border-width: 5px;
-    border-color: rgb(255, 192, 102);
-    border-style: solid;
-    border-radius: 50%;
-    position: absolute;
-    left: 620px;
-    top: 50px;
-    width: 1172px;
-    height: 1172px;
-    z-index: 448;
-  }
-  .ellipse-inner {
-    border-width: 1px;
-    border-color: rgb(255, 192, 102);
-    border-style: solid;
-    border-radius: 50%;
-    position: absolute;
-    left: 640px;
-    top: 70px;
-    width: 1133px;
-    height: 1133px;
-    z-index: 447;
-  }
-}
-
-.case-tesla-left {
-  padding-left: 120px;
-  padding-top: 480px;
+.case-left {
+  padding-left: 6.8vw;
+  padding-top: 44vh;
   color: $white;
-  h1 {
+  @media (max-width: 575.98px) {
+    padding-top: 15vh;
+    padding-bottom: 20vh;
+  }
+  h2 {
     font-weight: bold;
-    font-size: 20px;
+    font-size: 1.25rem;
     letter-spacing: -0.6px;
     text-transform: uppercase;
   }
-  h2 {
-    margin-top: 45px;
-    margin-right: 300px;
-    font-size: 44px;
+  p {
+    margin-top: 4.85vh;
+    max-width: 380px;
+    font-size: 2.75rem;
     letter-spacing: -1.32px;
     span {
       color: $orange;
@@ -48,43 +23,9 @@
   }
 }
 
-.case-tesla-right {
-  position: relative;
-  overflow-x: hidden;
+.case-right {
   padding: 0px;
   img {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
     width: 100%;
-    z-index: 450;
   }
-}
-
-.case-ufc-left {
-  padding-left: 120px;
-  padding-top: 480px;
-  color: $white;
-  h1 {
-    font-weight: bold;
-    font-size: 20px;
-    letter-spacing: -0.6px;
-    text-transform: uppercase;
-  }
-  h2 {
-    margin-top: 45px;
-    margin-right: 300px;
-    font-size: 44px;
-    letter-spacing: -1.32px;
-    span {
-      color: $orange;
-    }
-  }
-}
-
-.case-ufc-right {
-  background: url("../img/bg-case-ufc.png");
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center center;
 }
