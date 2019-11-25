@@ -4,6 +4,7 @@
 var app = {
   init: function() {
     app.changeNavBackground();
+    app.handleTogglerClick();
   },
   changeNavBackground: function() {
     var scroll_start = 0;
@@ -13,12 +14,23 @@ var app = {
       $(document).scroll(function() {
         scroll_start = $(document).scrollTop();
         if (scroll_start > offset.top) {
-          $("#header-nav").addClass("nav-scroll");
+          $("#nav-header").addClass("nav-scroll");
         } else {
-          $("#header-nav").removeClass("nav-scroll");
+          $("#nav-header").removeClass("nav-scroll");
+          $(".navbar-collapse").removeClass("show");
         }
       });
     }
+  },
+  handleTogglerClick: function() {
+    var scroll_start = 0;
+    var startchange = $("#startchange");
+    var offset = startchange.offset();
+    $(".navbar-toggler").click(function() {
+      scroll_start = $(document).scrollTop();
+      if (!scroll_start > offset.top)
+        $("#nav-header").toggleClass("nav-scroll");
+    });
   }
 };
 $("document").ready(function() {

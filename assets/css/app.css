@@ -11078,29 +11078,34 @@ a.text-dark:hover, a.text-dark:focus {
   width: 100%;
 }
 
-.header-nav {
-  -webkit-transition: background-color 0.2s;
-  transition: background-color 0.2s;
-}
-
-.header-nav img {
+.nav-header img {
   width: 100%;
   max-width: 260px;
 }
 
 @media (max-width: 991.98px) {
-  .header-nav img {
+  .nav-header img {
     max-width: 150px;
   }
 }
 
 @media (max-width: 575.98px) {
-  .header-nav img {
+  .nav-header img {
     max-width: 100px;
   }
 }
 
-.header-nav a {
+.nav-header li {
+  margin-left: 30px;
+}
+
+@media (max-width: 575.98px) {
+  .nav-header li {
+    margin-left: 0;
+  }
+}
+
+.nav-header a {
   font-family: "Maison Neue";
   font-weight: bold;
   color: #020000;
@@ -11109,22 +11114,38 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 @media (max-width: 991.98px) {
-  .header-nav a {
+  .nav-header a {
     color: #ffffff;
   }
 }
 
-.header-nav .navbar-toggler {
+.nav-header .navbar-toggler {
   outline: none;
   color: #020000;
   border: none;
   font-size: 2rem;
 }
 
+@media (max-width: 991.98px) {
+  .nav-header .navbar-toggler {
+    color: #ffffff;
+  }
+}
+
 .nav-scroll {
-  background: black;
+  background: #f4f4f4;
   -webkit-transition: background-color 0.2s;
   transition: background-color 0.2s;
+}
+
+.nav-scroll img {
+  -webkit-filter: invert(1);
+          filter: invert(1);
+}
+
+.nav-scroll a,
+.nav-scroll span {
+  color: #020000;
 }
 
 @font-face {
