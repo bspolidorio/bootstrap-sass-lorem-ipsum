@@ -1,33 +1,70 @@
+// =================================================
+//                      CLIENTS
+// =================================================
+
 .clients-left {
-  padding-left: 120px;
-  padding-top: 220px;
-  h1 {
+  padding: 20.37vh 2.34vw 8.62vh 6.25vw;
+  @media (max-width: 991.98px) {
+    padding: 7vh 6.25vw 2vh 6.25vw;
+  }
+  h2 {
     font-family: "Tiempos Headline";
     font-weight: 500;
-    font-size: 64px;
+    font-size: 4rem;
     letter-spacing: -1.92px;
-    padding-right: 300px;
+    max-width: 550px;
     span {
       text-decoration: underline;
       text-decoration-color: $orange;
     }
+    @media (max-width: 575.98px) {
+      font-size: 3.75rem;
+    }
   }
   p {
     margin-top: 70px;
-    font-size: 28px;
-    line-height: 44px;
+    font-size: 1.75rem;
+    line-height: 2.75rem;
     letter-spacing: -0.84px;
+    @media (max-width: 991.98px) {
+      margin-top: 5vh;
+    }
+    @media (max-width: 575.98px) {
+      font-size: 1.75rem;
+      line-height: 2.75rem;
+    }
   }
 }
 
 .clients-right {
-  padding-top: 220px;
-  padding-right: 230px;
+  padding: 20.37vh 2.34vw 8.62vh 6.25vw;
+  @media (max-width: 991.98px) {
+    padding: 7vh 6.25vw 2vh 6.25vw;
+  }
   ul {
+    padding: 0px;
+    max-width: 700px;
     list-style: none;
+    @media (max-width: 991.98px) {
+      padding: 0 10px;
+    }
   }
   li {
-    height: 120px;
-    width: 300px;
+    width: 50%;
+    padding: 0 50px 120px 0;
+    &:last-child {
+      padding-top: 50px;
+    }
+    @media (max-width: 575.98px) {
+      display: flex;
+      align-items: center;
+      padding: 0 10px 50px;
+    }
+  }
+
+  img {
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
   }
 }

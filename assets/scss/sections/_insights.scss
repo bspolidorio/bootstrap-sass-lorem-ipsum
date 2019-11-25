@@ -1,42 +1,65 @@
+// ================================================
+// 					INSIGHTS
+// ================================================
+
 .insights-top-left {
-  padding-left: 120px;
-  padding-top: 100px;
-  h1 {
+  padding: 20.37vh 0 0 6.25vw;
+  @media (max-width: 991.98px) {
+    padding: 7vh 6.25vw 0;
+  }
+  .d-flex {
+    height: 100%;
+  }
+  h2 {
     font-family: "Tiempos Headline";
     font-weight: 500;
-    font-size: 64px;
+    font-size: 4rem;
     letter-spacing: -1.92px;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
+    @media (max-width: 575.98px) {
+      font-size: 3.75rem;
+      margin-bottom: 15px;
+    }
   }
 }
 
 .insights-top-right {
-  padding-top: 110px;
-  h1 {
+  padding: 20.37vh 6.25vw 0 0;
+  @media (max-width: 991.98px) {
+    padding: 4vh 6.25vw 0;
+  }
+  h2 {
     margin-right: 60px;
-    font-size: 20px;
+    margin-bottom: 0;
+    font-size: 1.25rem;
     font-weight: bold;
     letter-spacing: -0.6px;
     text-transform: uppercase;
+    line-height: 1;
   }
   span {
     text-transform: uppercase;
-    font-size: 20px;
+    font-size: 1.25rem;
     letter-spacing: -0.6px;
+    line-height: 1;
   }
   p {
-    margin-top: 30px;
-    font-size: 40px;
+    margin: 2.77vh 0 0;
+    font-size: 2.5rem;
     letter-spacing: -1.2px;
-    padding-right: 150px;
+    line-height: normal;
+    @media (max-width: 575.98px) {
+      font-size: 1.75rem;
+    }
   }
 }
 
 .insights-bottom {
-  width: 1695px;
-  height: 715px;
-  background: url("../img/bg-news.png");
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center center;
+  padding: 8vh 6.25vw 0;
+  @media (max-width: 991.98px) {
+    padding: 2vh 6.25vw 0;
+  }
+  img {
+    width: 100%;
+  }
 }
