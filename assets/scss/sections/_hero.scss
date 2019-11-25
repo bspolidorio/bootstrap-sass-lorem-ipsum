@@ -1,16 +1,19 @@
+// =================================================
+//                      HERO
+// =================================================
+
 .hero-left {
-  padding-left: 6.26vw;
+  padding: 20.37vh 2.34vw 8.62vh 6.25vw;
+  @media (max-width: 991.98px) {
+    padding: 7vh 6.25vw 8.62vh;
+  }
   h2 {
-    margin-top: 25vh;
     font-size: 6.25rem;
     font-family: "Tiempos Headline";
     font-weight: 600;
     span {
       text-decoration: underline;
       text-decoration-color: $orange;
-    }
-    @media (max-width: 991.98px) {
-      margin-top: 7vh;
     }
     @media (max-width: 575.98px) {
       font-size: 3.75rem;
@@ -29,7 +32,6 @@
   a {
     margin-top: 8.62vh;
     margin-right: 3.1vw;
-    margin-bottom: 8.62vh;
     @media (max-width: 991.98px) {
       margin-top: 4vh;
     }
@@ -37,17 +39,11 @@
 }
 
 .hero-right {
-  padding-left: 6.26vw;
-  background: url("../img/bg-hero.png");
+  padding: 0 6.25vw 7vh;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.1)),
+    url("../img/bg-hero.png");
   background-repeat: no-repeat;
   background-size: cover;
-  @media (max-width: 575.98px) {
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.1)),
-      url("../img/bg-hero.png");
-    background-position: center;
-    background-size: cover;
-    min-height: 40vh;
-  }
   @media (max-width: 991.98px) {
     background-position: center;
     min-height: 40vh;
@@ -55,7 +51,6 @@
   p {
     font-size: 2.25rem;
     color: $light-gray;
-    margin-bottom: 7vh;
     span {
       color: $orange;
     }

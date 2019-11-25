@@ -10549,31 +10549,220 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 .footer {
-  min-height: 400px;
-  padding-left: 120px;
-  padding-top: 150px;
+  padding: 20.37vh 2.34vw 2vh 6.25vw;
   color: #ffffff;
 }
 
-.footer h1 {
+@media (max-width: 991.98px) {
+  .footer {
+    padding: 7vh 6.25vw 2vh;
+  }
+}
+
+.footer h2 {
   font-family: "Tiempos Headline";
   font-weight: 500;
-  font-size: 60px;
+  font-size: 3.75rem;
   letter-spacing: -1.92px;
   margin-bottom: 40px;
 }
 
-.footer h1 span {
+@media (max-width: 575.98px) {
+  .footer h2 {
+    font-size: 3.75rem;
+    margin-bottom: 15px;
+  }
+}
+
+.footer h2 span {
   color: #ffc167;
 }
 
-.footer .lower-text {
+.footer .copyright {
   margin-top: 60px;
+  font-size: 0.75rem;
 }
 
-.footer .lower-text img {
-  width: 260px;
-  height: 62px;
+@media (max-width: 991.98px) {
+  .footer .copyright {
+    margin-top: 0;
+  }
+}
+
+.footer .copyright img {
+  width: 100%;
+  max-width: 260px;
+}
+
+@media (max-width: 991.98px) {
+  .footer .copyright img {
+    max-width: 150px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .footer .copyright img {
+    max-width: 100px;
+  }
+}
+
+.footer .copyright span {
+  margin: 0 0 10px 30px;
+}
+
+@media (max-width: 991.98px) {
+  .footer .copyright span {
+    margin: 0 0 5px 0;
+  }
+}
+
+.footer .copyright a {
+  display: block;
+  color: #ffffff;
+}
+
+.footer .nav-footer {
+  margin: 0 auto 10px;
+}
+
+.footer .nav-footer nav {
+  width: 100%;
+}
+
+.footer .nav-footer ul {
+  max-width: 500px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+@media (max-width: 991.98px) {
+  .footer .nav-footer ul {
+    max-width: 100%;
+  }
+}
+
+.footer .nav-footer ul li {
+  display: inline-block;
+}
+
+.footer .nav-footer ul li a {
+  display: block;
+  color: #ffffff;
+}
+
+.footer .nav-footer ul li a span {
+  display: inline-block;
+  position: relative;
+  text-align: center;
+  border-radius: 50%;
+  background-color: #ffc066;
+  width: 25px;
+  height: 25px;
+  top: -10px;
+  color: #020000;
+  font-weight: 700;
+  line-height: 28px;
+}
+
+@media (max-width: 575.98px) {
+  .footer .nav-footer ul li a span {
+    width: 10px;
+    height: 10px;
+    line-height: 13px;
+    top: -3px;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .footer .newsletter {
+    max-width: 300px;
+    margin-bottom: 4vh;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .footer .newsletter {
+    max-width: 100%;
+  }
+}
+
+.footer .newsletter h3 {
+  font-size: 2.12rem;
+  letter-spacing: -1px;
+}
+
+@media (max-width: 991.98px) {
+  .footer .newsletter h3 {
+    margin-bottom: 3vh;
+  }
+}
+
+.footer .newsletter form {
+  position: relative;
+  width: 100%;
+}
+
+.footer .newsletter form input {
+  border: none;
+  border-bottom: solid 1px #ffc167;
+  background-color: transparent;
+  color: #ffffff;
+  outline: none;
+  font-weight: bold;
+  padding-bottom: 20px;
+  width: 100%;
+}
+
+@media (max-width: 991.98px) {
+  .footer .newsletter form input {
+    margin-bottom: 2vh;
+  }
+}
+
+.footer .newsletter form input::-webkit-input-placeholder {
+  color: #ffffff;
+}
+
+.footer .newsletter form input::-moz-placeholder {
+  color: #ffffff;
+}
+
+.footer .newsletter form input::-ms-input-placeholder {
+  color: #ffffff;
+}
+
+.footer .newsletter form input::placeholder {
+  color: #ffffff;
+}
+
+.footer .newsletter form button {
+  position: absolute;
+  background-color: transparent;
+  color: #ffffff;
+  outline: none;
+  border: none;
+  right: 0;
+}
+
+.footer .newsletter .nav-social-media {
+  width: 100%;
+}
+
+.footer .newsletter .nav-social-media ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer .newsletter .nav-social-media ul li {
+  display: inline-block;
+}
+
+.footer .newsletter .nav-social-media ul li a {
+  display: block;
+  color: #ffffff;
+  margin: 0 0 10px 0;
 }
 
 .case-left {
@@ -10622,11 +10811,16 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 .hero-left {
-  padding-left: 6.26vw;
+  padding: 20.37vh 2.34vw 8.62vh 6.25vw;
+}
+
+@media (max-width: 991.98px) {
+  .hero-left {
+    padding: 7vh 6.25vw 8.62vh;
+  }
 }
 
 .hero-left h2 {
-  margin-top: 25vh;
   font-size: 6.25rem;
   font-family: "Tiempos Headline";
   font-weight: 600;
@@ -10636,12 +10830,6 @@ a.text-dark:hover, a.text-dark:focus {
   text-decoration: underline;
   -webkit-text-decoration-color: #ffc167;
           text-decoration-color: #ffc167;
-}
-
-@media (max-width: 991.98px) {
-  .hero-left h2 {
-    margin-top: 7vh;
-  }
 }
 
 @media (max-width: 575.98px) {
@@ -10670,7 +10858,6 @@ a.text-dark:hover, a.text-dark:focus {
 .hero-left a {
   margin-top: 8.62vh;
   margin-right: 3.1vw;
-  margin-bottom: 8.62vh;
 }
 
 @media (max-width: 991.98px) {
@@ -10680,20 +10867,11 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 .hero-right {
-  padding-left: 6.26vw;
-  background: url("../img/bg-hero.png");
+  padding: 0 6.25vw 7vh;
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.2)), to(rgba(0, 0, 0, 0.1))), url("../img/bg-hero.png");
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.1)), url("../img/bg-hero.png");
   background-repeat: no-repeat;
   background-size: cover;
-}
-
-@media (max-width: 575.98px) {
-  .hero-right {
-    background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.2)), to(rgba(0, 0, 0, 0.1))), url("../img/bg-hero.png");
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.1)), url("../img/bg-hero.png");
-    background-position: center;
-    background-size: cover;
-    min-height: 40vh;
-  }
 }
 
 @media (max-width: 991.98px) {
@@ -10706,7 +10884,6 @@ a.text-dark:hover, a.text-dark:focus {
 .hero-right p {
   font-size: 2.25rem;
   color: #e6e6e6;
-  margin-bottom: 7vh;
 }
 
 .hero-right p span {
@@ -10720,14 +10897,12 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 .clients-left {
-  padding-left: 6.25vw;
-  padding-top: 20.37vh;
+  padding: 20.37vh 2.34vw 8.62vh 6.25vw;
 }
 
 @media (max-width: 991.98px) {
   .clients-left {
-    padding-top: 7vh;
-    padding-right: 6.25vw;
+    padding: 7vh 6.25vw 2vh 6.25vw;
   }
 }
 
@@ -10772,13 +10947,12 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 .clients-right {
-  padding: 0;
-  padding-top: 20.37vh;
+  padding: 20.37vh 2.34vw 8.62vh 6.25vw;
 }
 
 @media (max-width: 991.98px) {
   .clients-right {
-    padding-top: 7vh;
+    padding: 7vh 6.25vw 2vh 6.25vw;
   }
 }
 
@@ -10822,14 +10996,12 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 .insights-top-left {
-  padding-left: 6.26vw;
-  padding-top: 100px;
+  padding: 20.37vh 0 0 6.25vw;
 }
 
 @media (max-width: 991.98px) {
   .insights-top-left {
-    padding-top: 7vh;
-    padding-left: 6.25vw;
+    padding: 7vh 6.25vw 0;
   }
 }
 
@@ -10853,13 +11025,12 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 .insights-top-right {
-  padding-top: 110px;
+  padding: 20.37vh 6.25vw 0 0;
 }
 
 @media (max-width: 991.98px) {
   .insights-top-right {
-    padding-top: 4vh;
-    padding-left: 6.25vw;
+    padding: 4vh 6.25vw 0;
   }
 }
 
@@ -10881,18 +11052,10 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 .insights-top-right p {
-  margin-bottom: 0;
-  margin-top: 2.77vh;
+  margin: 2.77vh 0 0;
   font-size: 2.5rem;
   letter-spacing: -1.2px;
-  max-width: 750px;
   line-height: normal;
-}
-
-@media (max-width: 991.98px) {
-  .insights-top-right p {
-    max-width: none;
-  }
 }
 
 @media (max-width: 575.98px) {
@@ -10902,7 +11065,7 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 .insights-bottom {
-  padding: 85px 120px 0;
+  padding: 8vh 6.25vw 0;
 }
 
 @media (max-width: 991.98px) {
@@ -10915,7 +11078,30 @@ a.text-dark:hover, a.text-dark:focus {
   width: 100%;
 }
 
-nav a {
+.main-header {
+  position: absolute;
+  z-index: 1000;
+  background: transparent;
+}
+
+.main-header img {
+  width: 100%;
+  max-width: 260px;
+}
+
+@media (max-width: 991.98px) {
+  .main-header img {
+    max-width: 150px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .main-header img {
+    max-width: 100px;
+  }
+}
+
+.nav-header a {
   font-family: "Maison Neue";
   font-weight: bold;
   color: #020000;
@@ -10923,9 +11109,10 @@ nav a {
   font-size: 1.25rem;
 }
 
-nav img {
-  width: 326px;
-  height: 78px;
+@media (max-width: 991.98px) {
+  .nav-header a {
+    color: #ffffff;
+  }
 }
 
 @font-face {

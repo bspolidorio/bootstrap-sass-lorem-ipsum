@@ -1,9 +1,11 @@
+// =================================================
+//                      CLIENTS
+// =================================================
+
 .clients-left {
-  padding-left: 6.25vw;
-  padding-top: 20.37vh;
+  padding: 20.37vh 2.34vw 8.62vh 6.25vw;
   @media (max-width: 991.98px) {
-    padding-top: 7vh;
-    padding-right: 6.25vw;
+    padding: 7vh 6.25vw 2vh 6.25vw;
   }
   h2 {
     font-family: "Tiempos Headline";
@@ -35,10 +37,9 @@
 }
 
 .clients-right {
-  padding: 0;
-  padding-top: 20.37vh;
+  padding: 20.37vh 2.34vw 8.62vh 6.25vw;
   @media (max-width: 991.98px) {
-    padding-top: 7vh;
+    padding: 7vh 6.25vw 2vh 6.25vw;
   }
   ul {
     padding: 0px;
