@@ -26,10 +26,45 @@
 
   <body>
     <!-- Header -->
-    <header
+
+    <nav
+      class="navbar navbar-expand-lg fixed-top flex-row-reverse header-nav"
+      id="header-nav"
+    >
+      <a class="navbar-brand" href="#"
+        ><img src="/assets/img/logo.png" alt=""
+      /></a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarToggler"
+        aria-controls="navbarToggler"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="toggler-icon">☰</span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarToggler">
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Company</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Client work</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Insights</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- <header
       class="container-fluid d-flex align-items-center justify-content-between main-header"
     >
-      <nav class="navbar navbar-expand nav-header">
+      <nav class="navbar navbar-expand-lg nav-header">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item active">
             <a class="nav-link" href="#">☰</a>
@@ -48,11 +83,11 @@
       <div class="d-none d-md-block">
         <img src="/assets/img/logo.png" alt="" />
       </div>
-    </header>
+    </header> -->
 
     <!-- Change the face of influence -->
 
-    <div class="container-fluid">
+    <div id="startchange" class="container-fluid">
       <div class="row min-vh-100">
         <div class="col-lg-6 order-2 order-lg-1 d-flex hero-left">
           <div

@@ -8,7 +8,7 @@
     padding: 7vh 6.25vw 8.62vh;
   }
   h2 {
-    font-size: 6.25rem;
+    font-size: 5.25rem;
     font-family: "Tiempos Headline";
     font-weight: 600;
     span {
@@ -20,7 +20,7 @@
     }
   }
   p {
-    font-size: 2.25rem;
+    font-size: 2rem;
     margin-top: 10.7vh;
     @media (max-width: 991.98px) {
       margin-top: 5vh;
@@ -39,7 +39,7 @@
 }
 
 .hero-right {
-  padding: 0 6.25vw 7vh;
+  padding: 0 6.25vw 5vh;
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.1)),
     url("../img/bg-hero.png");
   background-repeat: no-repeat;

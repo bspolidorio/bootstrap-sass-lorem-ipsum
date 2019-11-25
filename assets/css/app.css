@@ -10821,7 +10821,7 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 .hero-left h2 {
-  font-size: 6.25rem;
+  font-size: 5.25rem;
   font-family: "Tiempos Headline";
   font-weight: 600;
 }
@@ -10839,7 +10839,7 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 .hero-left p {
-  font-size: 2.25rem;
+  font-size: 2rem;
   margin-top: 10.7vh;
 }
 
@@ -10867,7 +10867,7 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 .hero-right {
-  padding: 0 6.25vw 7vh;
+  padding: 0 6.25vw 5vh;
   background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.2)), to(rgba(0, 0, 0, 0.1))), url("../img/bg-hero.png");
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.1)), url("../img/bg-hero.png");
   background-repeat: no-repeat;
@@ -11078,30 +11078,29 @@ a.text-dark:hover, a.text-dark:focus {
   width: 100%;
 }
 
-.main-header {
-  position: absolute;
-  z-index: 1000;
-  background: transparent;
+.header-nav {
+  -webkit-transition: background-color 0.2s;
+  transition: background-color 0.2s;
 }
 
-.main-header img {
+.header-nav img {
   width: 100%;
   max-width: 260px;
 }
 
 @media (max-width: 991.98px) {
-  .main-header img {
+  .header-nav img {
     max-width: 150px;
   }
 }
 
 @media (max-width: 575.98px) {
-  .main-header img {
+  .header-nav img {
     max-width: 100px;
   }
 }
 
-.nav-header a {
+.header-nav a {
   font-family: "Maison Neue";
   font-weight: bold;
   color: #020000;
@@ -11110,9 +11109,22 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 @media (max-width: 991.98px) {
-  .nav-header a {
+  .header-nav a {
     color: #ffffff;
   }
+}
+
+.header-nav .navbar-toggler {
+  outline: none;
+  color: #020000;
+  border: none;
+  font-size: 2rem;
+}
+
+.nav-scroll {
+  background: black;
+  -webkit-transition: background-color 0.2s;
+  transition: background-color 0.2s;
 }
 
 @font-face {

@@ -1,10 +1,8 @@
 // =================================================
 //                      HEADER
 // =================================================
-.main-header {
-  position: absolute;
-  z-index: 1000;
-  background: transparent;
+.header-nav {
+  transition: background-color 0.2s;
   img {
     width: 100%;
     max-width: 260px;
@@ -15,8 +13,6 @@
       max-width: 100px;
     }
   }
-}
-.nav-header {
   a {
     font-family: "Maison Neue";
     font-weight: bold;
@@ -27,4 +23,15 @@
       color: $white;
     }
   }
+  .navbar-toggler {
+    outline: none;
+    color: $very-dark-brown;
+    border: none;
+    font-size: 2rem;
+  }
+}
+
+.nav-scroll {
+  background: black;
+  transition: background-color 0.2s;
 }
