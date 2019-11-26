@@ -15,12 +15,14 @@
     font-size: 1.25rem;
     letter-spacing: -0.6px;
     text-transform: uppercase;
+    z-index: 400;
   }
   p {
     margin-top: 4.85vh;
     max-width: 380px;
     font-size: 2.75rem;
     letter-spacing: -1.32px;
+    z-index: 400;
     span {
       color: $orange;
     }
@@ -33,6 +35,40 @@
 .case-right {
   padding: 0px;
   img {
+    position: relative;
     width: 100%;
+    z-index: 400;
+  }
+  .ellipse::before {
+    content: "";
+    display: block;
+    border-width: 5px;
+    border-color: $orange;
+    border-style: solid;
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-top: -360px;
+    margin-left: -385px;
+    width: 61.04vw;
+    height: 61.04vw;
+    z-index: 283;
+  }
+  .ellipse::after {
+    content: "";
+    display: block;
+    border-width: 1px;
+    border-color: $orange;
+    border-style: solid;
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-top: -350px;
+    margin-left: -375px;
+    width: 59.01vw;
+    height: 59.01vw;
+    z-index: 258;
   }
 }

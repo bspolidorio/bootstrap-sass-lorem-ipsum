@@ -3,6 +3,7 @@
 // =================================================
 
 .hero-left {
+  position: relative;
   padding: 20.37vh 2.34vw 8.62vh 6.25vw;
   @media (max-width: 991.98px) {
     padding: 7vh 6.25vw 8.62vh;
@@ -36,26 +37,95 @@
       margin-top: 4vh;
     }
   }
+  @media (min-width: 992px) {
+    &:before {
+      content: "";
+      display: block;
+      border-width: 1px;
+      border-color: rgb(31, 34, 43);
+      border-style: solid;
+      border-radius: 50%;
+      position: absolute;
+      left: -920px;
+      top: -15px;
+      width: 104.9vh;
+      height: 104.9vh;
+      z-index: 284;
+    }
+    &:after {
+      content: "";
+      display: block;
+      border-width: 5px;
+      border-color: rgb(31, 34, 43);
+      border-style: solid;
+      border-radius: 50%;
+      position: absolute;
+      left: -940px;
+      top: -35px;
+      width: 108.51vh;
+      height: 108.51vh;
+      z-index: 285;
+    }
+  }
 }
 
 .hero-right {
-  padding: 0 6.25vw 5vh;
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.1)),
-    url("../img/bg-hero.png");
-  background-repeat: no-repeat;
-  background-size: cover;
+  position: relative;
+  padding: 0;
+  overflow: hidden;
   @media (max-width: 991.98px) {
     background-position: center;
     min-height: 40vh;
   }
   p {
+    z-index: 10;
     font-size: 2.25rem;
     color: $light-gray;
     span {
       color: $orange;
     }
+    padding: 20.37vh 2.34vw 8.62vh 6.25vw;
+    @media (max-width: 991.98px) {
+      padding: 7vh 6.25vw 8.62vh;
+    }
     @media (max-width: 575.98px) {
       font-size: 1.75rem;
+    }
+  }
+  img {
+    position: absolute;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+  @media (min-width: 992px) {
+    &:before {
+      content: "";
+      display: block;
+      border-width: 1px;
+      border-color: rgb(31, 34, 43);
+      border-style: solid;
+      border-radius: 50%;
+      position: absolute;
+      left: 190px;
+      top: -530px;
+      width: 1133px;
+      height: 1133px;
+      z-index: 284;
+    }
+    &:after {
+      content: "";
+      display: block;
+      border-width: 5px;
+      border-color: rgb(31, 34, 43);
+      border-style: solid;
+      border-radius: 50%;
+      position: absolute;
+      left: 170px;
+      top: -545px;
+      width: 1172px;
+      height: 1172px;
+      z-index: 285;
     }
   }
 }

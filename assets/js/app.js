@@ -15,6 +15,7 @@ var app = {
         scroll_start = $(document).scrollTop();
         if (scroll_start > offset.top) {
           $("#nav-header").addClass("nav-scroll");
+          $("#nav-header").removeClass("btn-active");
         } else {
           $("#nav-header").removeClass("nav-scroll");
           $(".navbar-collapse").removeClass("show");
@@ -29,7 +30,7 @@ var app = {
     $(".navbar-toggler").click(function() {
       scroll_start = $(document).scrollTop();
       if (!scroll_start > offset.top)
-        $("#nav-header").toggleClass("nav-scroll");
+        $("#nav-header").toggleClass("btn-active");
     });
   }
 };
