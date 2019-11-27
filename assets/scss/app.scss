@@ -56,6 +56,21 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: "Blender Pro";
+  src: url("//db.onlinewebfonts.com/t/a082fd3df68a0b54e0d4d794bc38d268.eot");
+  src: url("//db.onlinewebfonts.com/t/a082fd3df68a0b54e0d4d794bc38d268.eot?#iefix")
+      format("embedded-opentype"),
+    url("//db.onlinewebfonts.com/t/a082fd3df68a0b54e0d4d794bc38d268.woff2")
+      format("woff2"),
+    url("//db.onlinewebfonts.com/t/a082fd3df68a0b54e0d4d794bc38d268.woff")
+      format("woff"),
+    url("//db.onlinewebfonts.com/t/a082fd3df68a0b54e0d4d794bc38d268.ttf")
+      format("truetype"),
+    url("//db.onlinewebfonts.com/t/a082fd3df68a0b54e0d4d794bc38d268.svg#Blender Pro")
+      format("svg");
+}
+
 // SCSS
 
 html,
@@ -64,6 +79,7 @@ body {
   background: $bg-almost-white;
   color: $very-dark-brown;
   font-size: 14px;
+  overflow-x: hidden;
   @media (max-width: 991.98px) {
     font-size: 12px;
   }
