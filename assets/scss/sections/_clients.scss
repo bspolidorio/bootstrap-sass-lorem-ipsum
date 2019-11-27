@@ -51,13 +51,14 @@
   }
   li {
     width: 50%;
-    padding: 0 50px 120px 0;
+    padding: 0 15px 120px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     &:last-child {
-      padding-top: 50px;
+      margin-top: 50px;
     }
     @media (max-width: 575.98px) {
-      display: flex;
-      align-items: center;
       padding: 0 10px 50px;
     }
   }

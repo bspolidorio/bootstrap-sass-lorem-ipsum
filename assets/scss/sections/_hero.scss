@@ -37,36 +37,6 @@
       margin-top: 4vh;
     }
   }
-  @media (min-width: 992px) {
-    &:before {
-      content: "";
-      display: block;
-      border-width: 1px;
-      border-color: rgb(31, 34, 43);
-      border-style: solid;
-      border-radius: 50%;
-      position: absolute;
-      left: -920px;
-      top: -15px;
-      width: 104.9vh;
-      height: 104.9vh;
-      z-index: 284;
-    }
-    &:after {
-      content: "";
-      display: block;
-      border-width: 5px;
-      border-color: rgb(31, 34, 43);
-      border-style: solid;
-      border-radius: 50%;
-      position: absolute;
-      left: -940px;
-      top: -35px;
-      width: 108.51vh;
-      height: 108.51vh;
-      z-index: 285;
-    }
-  }
 }
 
 .hero-right {

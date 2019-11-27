@@ -10814,40 +10814,6 @@ a.text-dark:hover, a.text-dark:focus {
   z-index: 400;
 }
 
-.case-right .ellipse::before {
-  content: "";
-  display: block;
-  border-width: 5px;
-  border-color: #ffc167;
-  border-style: solid;
-  border-radius: 50%;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  margin-top: -360px;
-  margin-left: -385px;
-  width: 61.04vw;
-  height: 61.04vw;
-  z-index: 283;
-}
-
-.case-right .ellipse::after {
-  content: "";
-  display: block;
-  border-width: 1px;
-  border-color: #ffc167;
-  border-style: solid;
-  border-radius: 50%;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  margin-top: -350px;
-  margin-left: -375px;
-  width: 59.01vw;
-  height: 59.01vw;
-  z-index: 258;
-}
-
 .hero-left {
   position: relative;
   padding: 20.37vh 2.34vw 8.62vh 6.25vw;
@@ -10902,37 +10868,6 @@ a.text-dark:hover, a.text-dark:focus {
 @media (max-width: 991.98px) {
   .hero-left a {
     margin-top: 4vh;
-  }
-}
-
-@media (min-width: 992px) {
-  .hero-left:before {
-    content: "";
-    display: block;
-    border-width: 1px;
-    border-color: #1f222b;
-    border-style: solid;
-    border-radius: 50%;
-    position: absolute;
-    left: -920px;
-    top: -15px;
-    width: 104.9vh;
-    height: 104.9vh;
-    z-index: 284;
-  }
-  .hero-left:after {
-    content: "";
-    display: block;
-    border-width: 5px;
-    border-color: #1f222b;
-    border-style: solid;
-    border-radius: 50%;
-    position: absolute;
-    left: -940px;
-    top: -35px;
-    width: 108.51vh;
-    height: 108.51vh;
-    z-index: 285;
   }
 }
 
@@ -11085,21 +11020,24 @@ a.text-dark:hover, a.text-dark:focus {
 
 .clients-right li {
   width: 50%;
-  padding: 0 50px 120px 0;
+  padding: 0 15px 120px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .clients-right li:last-child {
-  padding-top: 50px;
+  margin-top: 50px;
 }
 
 @media (max-width: 575.98px) {
   .clients-right li {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
     padding: 0 10px 50px;
   }
 }
